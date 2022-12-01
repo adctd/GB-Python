@@ -12,3 +12,7 @@ yB = float(input('Введите координаты точки B по оси y
 import math
 S = math.sqrt((xA-xB)**2+(yA-yB)**2)
 print(S)
+
+#Чтобы не вызывать доп функцию
+#S = ((x_a - x_b)**2 + (y_a - y_b)**2)**0.5
+#print(round(S,2))
