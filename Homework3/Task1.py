@@ -11,3 +11,10 @@ for i in range(len(list)):
     if i%2 != 0:
         sum += list[i]
 print(f'сумма элементов списка, стоящих на нечётной позиции равна {sum}')
+
+
+#def sum_of_even(nums: list[int]) -> int:
+#   return sum(nums[1::2]) строка значит: начинаем с первого элемента, 
+#                          конечный не указываем, шаг 2
+#a = [2, 3, 5, 9, 3]
+#print(sum_of_even(a))

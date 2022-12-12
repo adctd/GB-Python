@@ -10,3 +10,8 @@ while a > 0:
     b = str(a%2)+b
     a = a//2
 print(b)
+
+#def ordinary_bin(n: int) -> str:
+#   return bin(n)[2::]
+
+#print(ordinary_bin(45))

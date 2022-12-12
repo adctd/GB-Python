@@ -17,3 +17,22 @@ negofibonacci.reverse()
 negofibonacci.append(0)
 
 print(f'для числа {k} => {negofibonacci+fibonacci}')
+
+def fib(n):
+    if n in [1, 2]:
+        return 1
+    elif n == 0:
+        return 0
+    else:
+        return fib(n-1) + fib(n-2)
+
+def neg_fib(n: int) -> int:
+    return (-1)**(n+1)*fib(n)
+
+def sequence_of_fibs(n: int) -> list[int]:
+    list1 = [neg_fib(i) for i in range(n+1)][::-1]
+    list2 = [fib(i) for i in range(1, n+1)]
+    return list1 + list2
+
+n = 6
+print(sequence_of_fibs(n))

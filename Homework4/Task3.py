@@ -1,8 +1,8 @@
 # Задайте последовательность чисел. Напишите программу, 
 # которая выведет список неповторяющихся элементов исходной последовательности.
 
-list = list(map(int, input("Введите числа через пробел:\n").split()))
-print(f"Исходный список: {list}")
-new_list = []
-[new_list.append(i) for i in list if i not in new_list]
-print(f"Список из неповторяющихся элементов: {new_list}")
+from random import randint as rnd
+
+lst = [rnd(1, 4) for i in range(12)]
+print(f"Исходный список: {lst}")
+print(f"Список из неповторяющихся элементов: {list(set(lst))}")
